@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import CardInfo from "./components/CardInfo";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<CardInfo title="Budget" subtitle="$24,000" />
+			<CardInfo title="TOTAL CUSTOMERS" subtitle="1,600" />
+			<CardInfo title="TASKS PROGRESS" subtitle="75.5%" />
+			<CardInfo title="TOTAL PROFIT" subtitle="$23,200" />
+		</div>
+	);
 }
 
 export default App;
